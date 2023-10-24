@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Public+Sans:wght@300;400;700&display=swap');
+
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none; 
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Colors Variables */
+:root {
+    
+    /* Primary */ 
+    --Dark-Blue: hsl(233, 26%, 24%);
+    --Lime-Green: hsl(136, 65%, 51%);
+    --Bright-Cyan: hsl(192, 70%, 51%);
+
+    /* Neutral */ 
+    --Grayish-Blue: hsl(233, 8%, 62%);
+    --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+
+html {
+    font-size: 112.5%;
+    overflow-x: hidden;
+}
+
+/* Body */
+
+body {
+    background: var(--Very-Light-Gray);
+    color: var(--Grayish-Blue);
+}
+
+/* HEADER SECTION DESIGN */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    padding: 1rem 10%;
+    background: var(--White);
+    z-index: 1000;
+}
+
+.header.sticky {
+    box-shadow: 0 .5rem 1rem #000001;
+}
+
+/* Nav-Bar */
+.nav_Bar {
+    margin-right: 7.5rem;
+}
+
+/* Nav-Bar  Elements*/
+.nav_Bar a {
+    color: var(--Grayish-Blue);
+    font-weight: 500;
+    font-size: small;
+    margin-left: 1rem;
+    transition: .3s;
+}
+
+/* BUTTON BOX */
+.btn_Box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Section Buttons */
+.btn_Box .btn {
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+    color: var(--White);
+    font-weight: 400;
+    font-size: small;
+    width: 8rem;
+    height: 2rem;
+    background: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan)) ;
+    border-radius: 12rem;
+    z-index: 1;
+}
