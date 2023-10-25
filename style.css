@@ -1,20 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Public+Sans:wght@300;400;700&display=swap');
 
-
-/* General */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none; 
-    outline: none;
-    scroll-behavior: smooth;
-    font-family: 'Public Sans', sans-serif;
-}
-
-
-/* Colors Variables */
+/*  COLORS VARIABLES */
 :root {
     
     /* Primary */ 
@@ -29,51 +15,66 @@
     --White: hsl(0, 0%, 100%);
 }
 
+
+/* GENERAL */
+* {
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none; 
+    outline: none;
+    scroll-behavior: smooth; 
+}
+
 html {
     font-size: 112.5%;
     overflow-x: hidden;
-    background-color: var(--Light-Grayish-Blue);
+    background-color: var(--Very-Light-Gray);
 }
 
-/* Body */
+/* BODY */
 body {
     color: var(--Grayish-Blue);
-    background: url(images/image-mockups.png) no-repeat, url(images/bg-intro-desktop.svg)  no-repeat;
+    /* background: url(images/image-mockups.png) no-repeat, url(images/bg-intro-desktop.svg)  no-repeat;
     background-size: calc(60% - 60px), calc(92% - 20px);
-    background-position: left 40.2rem top -2.8rem, left 33rem top -10.2rem;
+    background-position: left 40.2rem top -2.8rem, left 33rem top -10.2rem; */
 }
 
 /* HEADER SECTION DESIGN */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    place-items: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 12%;
-    padding: 1rem 10%;
     background: var(--White);
     z-index: 1000;
+}
+
+.header_Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100%
 }
 
 .header.sticky {
     box-shadow: 0 .5rem 1rem #000001;
 }
 
-/* Nav-Bar */
-.nav_Bar {
-    margin-right: 7.5rem;
-}
-
 /* Nav-Bar  Elements*/
-.nav_Bar a {
+.nav_Bar a {   
     color: var(--Grayish-Blue);
-    font-weight: 300;
-    font-size: medium;
-    margin-left: 1rem;
+    font-weight: 400;
+    font-size: small;
     transition: .3s;
+    margin: .8rem;
 }
 
 /* BUTTON BOX */
@@ -91,7 +92,7 @@ body {
     position: relative;
     color: var(--White);
     font-weight: 500;
-    font-size: medium;
+    font-size: small;
     width: 8.2rem;
     height: 2.3rem;
     background: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan)) ;
@@ -110,15 +111,11 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5rem; 
+    margin-bottom: 5rem;
+
     /* background: url(images/image-mockups.png) no-repeat, url(images/bg-intro-desktop.svg)  no-repeat;
     background-size: calc(60% - 60px), calc(92% - 20px);
     background-position: left 40.2rem top -2.8rem, left 33rem top -10.2rem; */
-}
-
-.home {
-    background-color: transparent; 
-    z-index: -100;
 }
 
 /* Home_Content */
@@ -156,10 +153,23 @@ section {
     width: 80%; 
 }
 
+.home_Background {
+    position: absolute;
+    top: -32vh;
+    left: 31rem;
+}
+
+.home_Background_Two {
+    position: absolute;
+    top: -8.8vh;
+    left: 39.6rem;
+}
+
 /* ABOUT SECTION DESIGN */
 .about { 
     width: 100%;
-    padding: 6rem 10% 4rem;
+    padding: 7.2rem 10% 4rem;
+    background-color: var(--Light-Grayish-Blue);
 }
 
 .about .heading { 
