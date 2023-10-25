@@ -10,7 +10,7 @@
     border: none; 
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Public Sans', sans-serif;
 }
 
 
@@ -32,13 +32,15 @@
 html {
     font-size: 112.5%;
     overflow-x: hidden;
+    background-color: var(--Light-Grayish-Blue);
 }
 
 /* Body */
-
 body {
-    background: var(--Very-Light-Gray);
     color: var(--Grayish-Blue);
+    background: url(images/image-mockups.png) no-repeat, url(images/bg-intro-desktop.svg)  no-repeat;
+    background-size: calc(60% - 60px), calc(92% - 20px);
+    background-position: left 40.2rem top -2.8rem, left 33rem top -10.2rem;
 }
 
 /* HEADER SECTION DESIGN */
@@ -68,8 +70,8 @@ body {
 /* Nav-Bar  Elements*/
 .nav_Bar a {
     color: var(--Grayish-Blue);
-    font-weight: 500;
-    font-size: small;
+    font-weight: 300;
+    font-size: medium;
     margin-left: 1rem;
     transition: .3s;
 }
@@ -89,7 +91,7 @@ body {
     position: relative;
     color: var(--White);
     font-weight: 500;
-    font-size: small;
+    font-size: medium;
     width: 8.2rem;
     height: 2.3rem;
     background: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan)) ;
@@ -108,38 +110,41 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: -1rem;
-    background-color: transparent;
-    background: url(images/image-mockups.png) no-repeat, url(images/bg-intro-desktop.svg)  no-repeat;
+    margin-bottom: 5rem; 
+    /* background: url(images/image-mockups.png) no-repeat, url(images/bg-intro-desktop.svg)  no-repeat;
     background-size: calc(60% - 60px), calc(92% - 20px);
-    background-position:left 40.2rem top -2.8rem, left 33rem top -10.2rem;
-} 
+    background-position: left 40.2rem top -2.8rem, left 33rem top -10.2rem; */
+}
 
-/* Contenido de Home - Section */
+.home {
+    background-color: transparent; 
+    z-index: -100;
+}
+
+/* Home_Content */
 .home_Content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    z-index: 99;
 }
 
-/* H1 del Contenido del Home */
+/* H1 of Home_Content */
 .home_Content h1 { 
     color: var(--Dark-Blue);  
-    font-size: 2.9rem;
+    font-size: 3rem;
     font-weight: 400;
     line-height: 1.2;
 }
 
-/* P del Contenido del Home */
+/* P of Home_Content */
 .home_Content p {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size:medium;
-    width: 40%;
-    margin: 1rem 0 2rem; 
+    width: 38%;
+    margin: 1.2rem 0 2rem; 
 }
 
 /* Home Button*/
@@ -150,3 +155,23 @@ section {
     bottom: 4.5rem;
     width: 80%; 
 }
+
+/* ABOUT SECTION DESIGN */
+.about { 
+    width: 100%;
+    padding: 6rem 10% 4rem;
+}
+
+.about .heading { 
+    color: var(--Dark-Blue);  
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.about_Content p {
+    font-size:medium;
+    width: 54%;
+    margin: 1.4rem 0 2rem; 
+}
+
