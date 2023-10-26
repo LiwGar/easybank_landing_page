@@ -49,7 +49,7 @@ body {
     left: 0;
     width: 100%;
     height: 12%;
-    background: var(--White);
+    background-color: var(--White);
     z-index: 1000;
 }
 
@@ -185,7 +185,6 @@ section {
 .careers {
     display: grid;
     place-items: center;
-    color: var(--text-color);
     min-height: fit-content;
     padding: 2rem 10% 2rem; 
     background-color: var(--Light-Grayish-Blue); 
@@ -220,6 +219,66 @@ section {
     margin: 1.8rem 0 1.8rem;
 }
 
+/* BLOG SECTION DESIGN */
+
+.blog {
+    display: grid;
+    place-items: start;
+    min-height: min-content;
+    padding: 6rem 10% 6rem;
+}
+
+.blog .heading {
+    color: var(--Dark-Blue);  
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 2.8rem;  
+}
+
+.blog_Box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1.4rem;
+}
+
+.blog_Content {
+    text-align: start;
+    width: 25%;
+    background-color: var(--White);
+    border-radius: .4rem;
+}
+
+.blog_Content img {
+    width: 100%;
+    height: 11.2rem;
+    object-fit: cover;
+    border-radius: .4rem .4rem 0 0;
+}
+
+.blog_Content .content {
+    margin: 1rem 1.2rem 1rem;
+}
+
+
+
+.blog_Content .author {
+    font-size:x-small;
+    margin-bottom: .8rem;
+}
+
+.blog_Content a {
+    color: var(--Dark-Blue);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.blog_Content p {
+    font-size: .7rem;
+    line-height: 1.7;
+    margin: .5rem 0 .5rem;
+}
 
 
     
