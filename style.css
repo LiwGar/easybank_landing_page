@@ -32,15 +32,12 @@
 html {
     font-size: 112.5%;
     overflow-x: hidden;
-    background-color: var(--Very-Light-Gray);
 }
 
 /* BODY */
 body {
     color: var(--Grayish-Blue);
-    /* background: url(images/image-mockups.png) no-repeat, url(images/bg-intro-desktop.svg)  no-repeat;
-    background-size: calc(60% - 60px), calc(92% - 20px);
-    background-position: left 40.2rem top -2.8rem, left 33rem top -10.2rem; */
+    background-color: var(--Very-Light-Gray);
 }
 
 /* HEADER SECTION DESIGN */
@@ -112,10 +109,6 @@ section {
     justify-content: center;
     align-items: center;
     margin-bottom: 5rem;
-
-    /* background: url(images/image-mockups.png) no-repeat, url(images/bg-intro-desktop.svg)  no-repeat;
-    background-size: calc(60% - 60px), calc(92% - 20px);
-    background-position: left 40.2rem top -2.8rem, left 33rem top -10.2rem; */
 }
 
 /* Home_Content */
@@ -153,6 +146,7 @@ section {
     width: 80%; 
 }
 
+/* DOBLE BACKGROUND */
 .home_Background {
     position: absolute;
     top: -32vh;
@@ -167,9 +161,11 @@ section {
 
 /* ABOUT SECTION DESIGN */
 .about { 
-    width: 100%;
-    padding: 7.2rem 10% 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content;
     background-color: var(--Light-Grayish-Blue);
+    padding-bottom: 0;
 }
 
 .about .heading { 
@@ -184,4 +180,48 @@ section {
     width: 54%;
     margin: 1.4rem 0 2rem; 
 }
+
+/* CAREERS SECTION DESIGN */
+.careers {
+    display: grid;
+    place-items: center;
+    color: var(--text-color);
+    min-height: fit-content;
+    padding: 2rem 10% 2rem; 
+    background-color: var(--Light-Grayish-Blue); 
+}
+
+.careers_Box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+.careers_Content {
+    text-align: start;
+    width: 25%;
+}
+
+.content img {
+    margin-bottom: 1.9rem;
+}
+
+.careers_Content h3 {
+    color: var(--Dark-Blue);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.careers_Content p {
+    font-size: .815rem;
+    line-height: 1.7;
+    margin: 1.8rem 0 1.8rem;
+}
+
+
+
+    
+
 
