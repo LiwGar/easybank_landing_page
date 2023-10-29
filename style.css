@@ -63,7 +63,7 @@ body {
 
 /* //scroll sections //sticky header */
 .header.sticky {
-    box-shadow: 0 .5rem 1rem #000001;
+    box-shadow: 0 .5rem 1rem var(--Dark-Blue);
 }
 
 .header_Logo {
@@ -74,11 +74,21 @@ body {
 
 /* Nav-Bar  Elements*/
 .nav_Bar a {   
+    position: relative;
     color: var(--Grayish-Blue);
     font-weight: 400;
     font-size: small;
-    transition: .3s;
     margin: .8rem;
+    transition: .3s;
+}
+
+.nav_Bar a:after,
+.nav_Bar a.active {
+    color: black;
+    height: 3px;
+    text-decoration-line: underline;
+    text-decoration-color: var(--Lime-Green);
+    text-decoration-thickness: 0.15rem;
 }
 
 /* Menu Icon (header) */
@@ -291,6 +301,11 @@ section {
     font-weight: 400;
 }
 
+.blog_Content a:hover,
+.blog_Content a.active {
+    color: var(--Lime-Green);
+}
+
 .blog_Content p {
     font-size: .7rem;
     line-height: 1.7;
@@ -359,6 +374,10 @@ section {
 }
 .contact_Link a {
     color: var(--Light-Grayish-Blue);
+}
+.contact_Link a:hover,
+.contact_Link a.active {
+    color: var(--Lime-Green);
 }
 
 .contact_Content_Button {
@@ -517,7 +536,6 @@ section {
 
     .home .home_button {
         display: flex; 
-        
         width: auto;
         height: auto;
         margin-bottom: -8rem;
@@ -530,6 +548,69 @@ section {
         width: 16.5rem;
         height: 4.8rem; 
     }
+
+    .about {
+        justify-content: center;        
+        text-align: center;
+        width: 100%;
+        min-height: 28rem;
+        padding: 1rem 5% 1rem;
+    }
+
+    .about .heading { 
+        font-size: 3.8rem;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-top: 5rem;
+    }
+
+    .about_Content p {
+        line-height: 1.6;
+        width: 100%;
+    }
+
+    .careers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 1rem 5% 1rem;
+        
+    }
+
+    .careers_Box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: max-content ;
+    }
+
+    .careers_Content content {
+        justify-content: center;
+        align-items: center;
+       
+        
+    }
+
+    .content h3 {
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: 400;
+        width: max-content;
+    }
+
+    .content p {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        width: 100%;
+    }
+
+    
+    
+
+
 
     
 
