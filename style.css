@@ -505,6 +505,7 @@ section {
         z-index: 1;
     }
     
+    /* HOME SECTION DESIGN */
     .home {
         width: 100%;
         height: -30rem;
@@ -549,6 +550,7 @@ section {
         height: 4.8rem; 
     }
 
+    /* ABOUT SECTION DESIGN */
     .about {
         justify-content: center;        
         text-align: center;
@@ -569,6 +571,7 @@ section {
         width: 100%;
     }
 
+    /* CAREERS SECTION DESIGN */
     .careers {
         display: flex;
         justify-content: center;
@@ -576,7 +579,6 @@ section {
         text-align: center;
         width: 100%;
         padding: 1rem 5% 1rem;
-        
     }
 
     .careers_Box {
@@ -584,28 +586,163 @@ section {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: max-content ;
+        width: max-content;
+        margin-top: 1.4rem;
+    }
+
+    .careers_Content {
+        width: 100%;
+        text-align: center;
     }
 
     .careers_Content content {
-        justify-content: center;
-        align-items: center;
-       
-        
+        width: 100%;
     }
 
-    .content h3 {
+    .careers_Content .content h3 {
         text-align: center;
         font-size: 2.2rem;
         font-weight: 400;
-        width: max-content;
     }
 
-    .content p {
-        font-size: 1.6rem;
+    .careers_Content p {
+        font-size: 1.5rem;
         line-height: 1.6;
         width: 100%;
     }
+
+    /* BLOG SECTION DESIGN */
+    .blog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 1rem 5% 1rem;
+        margin-bottom: 8rem;
+    }
+
+    .blog .heading {
+        font-size: 3.2rem;
+        font-weight: 400;
+        margin-top: 8rem;
+    }
+
+    .blog_Box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: .6rem;
+        gap: 2.5rem;
+    }
+
+    .blog_Content {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .blog_Content img {
+        height: 21rem;
+        border-radius:  .8rem .8rem 0 0;
+    }
+
+    .blog_Content .content {
+        text-align: start; 
+        width: 90%;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    .blog_Content .content .author {
+        margin-bottom: 1.2rem;
+    }
+
+    .blog_Content .content a {
+        font-size: 1.7rem;
+    }
+    .blog_Content .content p {
+        font-size: 1.3rem;
+        line-height: 1.5;
+        margin-top: 1rem;
+    }
+
+    /* CONTACT SECTION DESIGN */
+    .contact {
+        height: 48.5rem;
+    }
+    .contact .contact_Box{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        padding: 1.6rem 10% .8rem;
+    }
+
+    .contact .contact_Box .contact_Column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+    }
+    .contact_Content_Socials .contact_Logo {
+        justify-content: center;
+    }
+    .contact_Content_Socials .contact_Net {
+        justify-content: center;
+        gap: 1.2rem;
+    }
+
+    .contact_Net .icon_Socials {
+        width:2.5rem; 
+        height:2.5rem;
+    }
+
+    .contact_Column .contact_Link {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: medium;
+    }
+
+    .contact_Box .contact_Content_Button .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact_Content_Button .contact_button .btn {
+        color: var(red);
+        font-size: medium;
+        font-weight: 500;
+        width: 16.5rem;
+        height: 4.8rem;
+        margin-top: 1rem;
+    } 
+
+    .contact_Content_Button p {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        font-size: small;
+        gap: 2rem;
+    }
+    .footer .attribution {
+        text-align: center;
+    }
+
+    .footer .footer_BtnToTop {
+        justify-content: center;
+        align-items: center;
+    }
+    
 
     
     
