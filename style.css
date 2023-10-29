@@ -50,7 +50,7 @@ body {
     width: 100%;
     height: 12%;
     background-color: var(--White);
-    z-index: 1000;
+    z-index: 2000;
 }
 
 .header_Container {
@@ -73,22 +73,72 @@ body {
 }
 
 /* Nav-Bar  Elements*/
-.nav_Bar a {   
+
+nav a {   
     position: relative;
+    text-align: center;
+    text-decoration: none;
     color: var(--Grayish-Blue);
     font-weight: 400;
     font-size: small;
+    line-height: 70px;
     margin: .8rem;
-    transition: .3s;
+    z-index: 2;
 }
 
-.nav_Bar a:after,
+nav .animation {
+    position: relative;
+    height: 5px;
+    bottom: 0;
+    z-index: 0;
+    background: var(--Lime-Green);
+    transition: all .25s ease 0s;
+}
+
+nav a:nth-child(1) {
+    width: 60px;
+    
+}
+nav .start-home,a:nth-child(1):hover~.animation{
+    width: 60px;
+    left: 5px;
+}
+
+nav a:nth-child(2) {
+    width: 60px;
+}
+nav .start-about,a:nth-child(2):hover~.animation{
+    width: 60px;
+    left: 72px;
+}
+
+nav a:nth-child(3) {
+    width: 60px;
+}
+nav .start-contact,a:nth-child(3):hover~.animation{
+    width: 60px;
+    left: 150px;
+}
+
+nav a:nth-child(4) {
+    width: 60px;
+}
+nav .start-blog,a:nth-child(4):hover~.animation{
+    width: 60px;
+    left: 219px;
+}
+
+nav a:nth-child(5) {
+    width: 60px;
+}
+nav .start-careers,a:nth-child(5):hover~.animation{
+    width: 60px;
+    left: 290px;
+}
+
+.nav_Bar a.after,
 .nav_Bar a.active {
     color: black;
-    height: 3px;
-    text-decoration-line: underline;
-    text-decoration-color: var(--Lime-Green);
-    text-decoration-thickness: 0.15rem;
 }
 
 /* Menu Icon (header) */
@@ -407,13 +457,14 @@ section {
     width: 100%;
     height: 100%;
     padding: 2rem 10% 2rem; 
-    background-color: var(--Dark-Blue);
+    background-color: var(--Light-Grayish-Blue);
 }
 
 .footer a {
     font-size: medium;
+    font-weight: bold;
     letter-spacing: .1rem;
-    color: var(--Lime-Green)
+    color: var(--Bright-Cyan)
 }
 
 /* Footer Button */
@@ -425,10 +476,10 @@ section {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: .2rem solid var(--Lime-Green);
+    border: .2rem solid var(--Bright-Cyan);
     border-radius: 50%;
     font-size: 20px;
-    color: var(--Lime-Green);
+    color: var(--Bright-Cyan);
     z-index: 1;
     overflow: hidden;
     transition: .5s;
@@ -445,9 +496,9 @@ section {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: var(--Lime-Green);
+    background-color: var(--Bright-Cyan);
     z-index: -1;
-    transition: .5s; 
+    transition: .3s; 
 }
 
 .footer_Text p:nth-child(1) {
@@ -500,21 +551,29 @@ section {
         display: block;
     }
 
+    nav .animation {
+        display: none;
+    }
+    
+
     .nav_Bar {
         position: absolute;
+        text-align: center;
         top: 100%;
-        left: -100%;/*2*/
+        left: -100%;
         width: 86%;
         background: var(--White);
-        padding: 0 0 3rem 0;
         box-shadow: 0 2rem 10rem var(--Grayish-Blue);
         transition: .25s ease-in;
     }
 
     .nav_Bar.active {
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         top: 9.6rem;
         left: 2.6rem; /*1*/
+        padding: 0 0 0 0;
         border-radius: .5rem;
     }
 
@@ -523,7 +582,10 @@ section {
         color: var(--Dark-Blue);
         font-size: 2rem;
         font-weight: 400;
-        margin: 3rem 0;
+        height: 6rem;
+        padding: none;
+        margin: 0 0 1rem 0;
+
     }
 
     .desktop_Background .background_One {
