@@ -510,11 +510,9 @@ section {
 
 /* RESPONSIVE DESIGN */
 
-@media (max-width: 952px) {
 
-}
-
-@media  (max-width: 375px) {
+@media (max-width: 400px) and
+ (max-width: 375px) {
     html { 
         font-size: 62%;
         margin: 0;
