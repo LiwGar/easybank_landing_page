@@ -92,7 +92,7 @@ body {
 }
 
 /* Menu Icon (header) */
-.header_Container .menu_Icon {
+#menu_Icon {
     font-size: 3.6rem;
     cursor: pointer;
     display: none;
@@ -458,20 +458,28 @@ section {
 }
 
 /* RESPONSIVE DESIGN */
-@media  (max-width: 375px) {
 
+@media (max-width: 952px) {
+
+}
+
+@media  (max-width: 375px) {
     html { 
         font-size: 62%;
-        width: 100%;
         margin: 0;
     }
 
     .header {
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        align-items: center;
+        width: 37.8rem;
         height: 7rem;
         padding: 1rem 5% 1rem;
+    }
+
+    .header_Container {
+        width: 100%;
     }
 
     .header_Container .header_Logo {
@@ -479,9 +487,43 @@ section {
        font-size: smaller;
     }
 
-    .nav_Bar,
     .header_button {
         display: none;
+    }
+
+    .menu_Icon {
+        justify-content: end;
+        align-items: end;
+    }
+    
+    #menu_Icon {
+        display: block;
+    }
+
+    .nav_Bar {
+        position: absolute;
+        top: 100%;
+        left: -100%;/*2*/
+        width: 86%;
+        background: var(--White);
+        padding: 0 0 3rem 0;
+        box-shadow: 0 2rem 10rem var(--Grayish-Blue);
+        transition: .25s ease-in;
+    }
+
+    .nav_Bar.active {
+        text-align: center;
+        top: 9.6rem;
+        left: 2.6rem; /*1*/
+        border-radius: .5rem;
+    }
+
+    .nav_Bar a {
+        display: block;
+        color: var(--Dark-Blue);
+        font-size: 2rem;
+        font-weight: 400;
+        margin: 3rem 0;
     }
 
     .desktop_Background .background_One {
