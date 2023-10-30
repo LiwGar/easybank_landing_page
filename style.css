@@ -73,7 +73,6 @@ body {
 }
 
 /* Nav-Bar  Elements*/
-
 nav a {   
     position: relative;
     text-align: center;
@@ -92,7 +91,7 @@ nav .animation {
     bottom: 0;
     z-index: 0;
     background: var(--Lime-Green);
-    transition: all .25s ease 0s;
+    transition: all .5s ease 0s;
 }
 
 nav a:nth-child(1) {
@@ -171,7 +170,7 @@ nav .start-careers,a:nth-child(5):hover~.animation{
     z-index: 1;
 }
 
-/*************** HOME SECTION DESIGN ***************/
+/* HOME SECTION DESIGN */
 section {
     min-height: 100vh;
     padding: 10rem 10% 4rem;
@@ -337,7 +336,7 @@ section {
 }
 
 .blog_Content .content {
-    margin: 1rem 1.2rem 1rem;
+    margin: 1rem 1.2rem 2rem;
 }
 
 .blog_Content .author {
@@ -520,7 +519,7 @@ section {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: calc(100%);
+        width: calc(100% - 2.55%);
         height: 7rem;
         padding: 1rem 5% 1rem;
     }
@@ -542,6 +541,7 @@ section {
         color: var(--Dark-Blue);
         justify-content: end;
         align-items: end;
+        margin-right: 1rem;
     }
     
     #menu_Icon {
@@ -559,8 +559,8 @@ section {
         left: -100%;
         width: 86%;
         background: var(--White);
-        box-shadow: 0 2rem 10rem var(--Grayish-Blue);
-        transition: .25s ease-in;
+        box-shadow: 0 .5rem 2rem var(--Dark-Blue);
+        transition: .25s ease;
     }
 
     .nav_Bar.active {
