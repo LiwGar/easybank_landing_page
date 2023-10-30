@@ -171,7 +171,7 @@ nav .start-careers,a:nth-child(5):hover~.animation{
     z-index: 1;
 }
 
-/* HOME SECTION DESIGN */
+/*************** HOME SECTION DESIGN ***************/
 section {
     min-height: 100vh;
     padding: 10rem 10% 4rem;
@@ -508,11 +508,9 @@ section {
     width: 100%;
 }
 
-/* RESPONSIVE DESIGN */
+/*************** RESPONSIVE DESIGN ***************/
 
-
-@media (max-width: 400px) and
- (max-width: 375px) {
+@media (max-width: 462px) {
     html { 
         font-size: 62%;
         margin: 0;
@@ -522,13 +520,350 @@ section {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 37.8rem;
+        width: calc(100% - 4.9%);
         height: 7rem;
         padding: 1rem 5% 1rem;
     }
 
     .header_Container {
         width: 100%;
+    }
+
+    .header_Container .header_Logo {
+       align-items: center;
+       font-size: smaller;
+    }
+
+    .header_button {
+        display: none;
+    }
+
+    .menu_Icon {
+        color: var(--Dark-Blue);
+        justify-content: end;
+        align-items: end;
+    }
+    
+    #menu_Icon {
+        display: block;
+    }
+
+    nav .animation {
+        display: none;
+    }
+    
+    .nav_Bar {
+        position: absolute;
+        text-align: center;
+        top: 100%;
+        left: -100%;
+        width: 86%;
+        background: var(--White);
+        box-shadow: 0 2rem 10rem var(--Grayish-Blue);
+        transition: .25s ease-in;
+    }
+
+    .nav_Bar.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 9.6rem;
+        left: 2.6rem; /*1*/
+        padding: 0 0 0 0;
+        border-radius: .5rem;
+    }
+
+    .nav_Bar a {
+        display: block;
+        color: var(--Dark-Blue);
+        font-size: 2rem;
+        font-weight: 400;
+        height: 6rem;
+        padding: none;
+        margin: 0 0 1rem 0;
+    }
+
+    .desktop_Background .background_One {
+        display: none;       
+    }
+
+    .mobile_Background {
+        display: block;
+        position: absolute;
+        width: calc(100% - 4.8%);
+        top:   1vh;
+        left: .0.5rem;
+        z-index: -1;
+    }
+
+    .mobile_Background .mobile_One {
+        width: 100%;
+    }
+
+    .desktop_Background_Two {
+        display: block;
+        position: absolute;
+        width: calc(100% - 5%);
+        top: -7.6rem;
+        left: 1.1rem;
+        z-index: -1;
+    }
+    
+    .background_Two {
+        width: calc(100% - 5%);
+    }
+    
+    /* HOME SECTION DESIGN */
+    .home {
+        width: calc(100% - 5%);
+        margin-top: 23rem;
+        min-height: 55rem;
+        padding: 1rem 5% 1rem;
+    }
+
+    .home .home_Content{
+        display: flex;
+        flex-direction: column;        
+        text-align: center;
+        max-height: 28.5rem;
+        margin-top: 12rem;
+    }
+
+    .home_Content h1 {
+        font-size: 4rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+
+    .home_Content p {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .home .home_button {
+        display: flex; 
+        width: auto;
+        height: auto;
+        margin-bottom: -11rem;
+    }
+
+    .home .home_button .btn {
+        color: var(--White);
+        font-size: medium;
+        font-weight: 500;
+        width: 16.5rem;
+        height: 4.8rem; 
+    }
+
+    /* ABOUT SECTION DESIGN */
+    .about {
+        justify-content: center;        
+        text-align: center;
+        width: calc(100% - 5%);
+        min-height: 28rem;
+        padding: 1rem 5% 1rem;
+    }
+
+    .about .heading { 
+        font-size: 3.8rem;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-top: 5rem;
+    }
+
+    .about_Content p {
+        line-height: 1.6;
+        width: 100%;
+    }
+
+    /* CAREERS SECTION DESIGN */
+    .careers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: calc(100% - 5%);
+        padding: 1rem 5% 5rem;
+    }
+
+    .careers_Box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+        margin-top: 1.4rem;
+    }
+
+    .careers_Content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .careers_Content content {
+        width: 100%;
+    }
+
+    .careers_Content .content h3 {
+        text-align: center;
+        font-size: 2.4rem;
+        font-weight: 400;
+    }
+
+    .careers_Content p {
+        font-size: 1.7rem;
+        line-height: 1.6;
+        width: 100%;
+    }
+
+    /* BLOG SECTION DESIGN */
+    .blog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: calc(100% - 5%);
+        padding: 1.5rem 5% 1rem;
+        margin-bottom: 8rem;
+    }
+
+    .blog .heading {
+        font-size: 3.6rem;
+        font-weight: 400;
+        margin-top: 8rem;
+    }
+
+    .blog_Box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: .6rem;
+        gap: 2.5rem;
+    }
+
+    .blog_Content {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .blog_Content img {
+        height: 23rem;
+        border-radius:  .8rem .8rem 0 0;
+    }
+
+    .blog_Content .content {
+        text-align: start; 
+        width: 90%;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    .blog_Content .content .author {
+        font-size: 1.1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .blog_Content .content a {
+        font-size: 1.9rem;
+    }
+    .blog_Content .content p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        margin-top: 1rem;
+    }
+
+    /* CONTACT SECTION DESIGN */
+    .contact {
+        width: calc(100% - 4.9%);
+        height: 58rem;
+    }
+    .contact .contact_Box{
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+        padding: 1.6rem 10% .8rem;
+    }
+
+    .contact .contact_Box .contact_Column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+    }
+    .contact_Content_Socials .contact_Logo {
+        justify-content: center;
+    }
+    .contact_Content_Socials .contact_Net {
+        justify-content: center;
+        margin-top: 2rem;
+        gap: 1.7rem;
+    }
+
+    .contact_Net .icon_Socials {
+        width:2.8rem; 
+        height:2.8rem;
+    }
+
+    .contact_Column .contact_Link {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .contact_Box .contact_Content_Button .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact_Content_Button .contact_button .btn {
+        color: var(--White);
+        font-size: medium;
+        font-weight: 500;
+        width: 16.5rem;
+        height: 4.8rem;
+    } 
+
+    .contact_Content_Button p {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        font-size: small;
+        width: calc(100% - 4.9%);
+        gap: 2rem;
+    }
+    .footer .attribution {
+        text-align: center;
+    }
+
+    .footer .footer_BtnToTop {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 375px) {
+    html { 
+        font-size: 62%;
+        margin: 0;
+    }
+
+    .header {
+        width: calc(100% - 4.9%);
+        height: 7rem;
+        padding: 1rem 4% 1rem;
     }
 
     .header_Container .header_Logo {
@@ -553,7 +888,6 @@ section {
         display: none;
     }
     
-
     .nav_Bar {
         position: absolute;
         text-align: center;
@@ -609,17 +943,13 @@ section {
     
     /* HOME SECTION DESIGN */
     .home {
-        width: 100%;
-        height: -30rem;
-        margin-top: 20rem;
+        width: calc(100% - 4.9%);
+        margin-top: 15rem;
         min-height: 55rem;
         padding: 1rem 5% 1rem;
     }
 
     .home .home_Content{
-        display: flex;
-        flex-direction: column;        
-        text-align: center;
         max-height: 28.5rem;
         margin-top: 12rem;
     }
@@ -631,17 +961,14 @@ section {
     }
 
     .home_Content p {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         line-height: 1.6;
         width: 100%;
         margin-top: 3rem;
     }
 
     .home .home_button {
-        display: flex; 
-        width: auto;
-        height: auto;
-        margin-bottom: -8rem;
+        margin-bottom: -2.5rem;
     }
 
     .home .home_button .btn {
@@ -654,11 +981,9 @@ section {
 
     /* ABOUT SECTION DESIGN */
     .about {
-        justify-content: center;        
-        text-align: center;
-        width: 100%;
+        width: calc(100% - 4.9%);
         min-height: 28rem;
-        padding: 1rem 5% 1rem;
+        padding: 2rem 5% 1rem;
     }
 
     .about .heading { 
@@ -669,58 +994,35 @@ section {
     }
 
     .about_Content p {
+        font-size: 1.5rem;
         line-height: 1.6;
         width: 100%;
     }
 
     /* CAREERS SECTION DESIGN */
     .careers {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        padding: 1rem 5% 1rem;
+        width: calc(100% - 4.9%);
+        padding: 1rem 5% 5rem;
     }
 
     .careers_Box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: max-content;
         margin-top: 1.4rem;
     }
 
-    .careers_Content {
-        width: 100%;
-        text-align: center;
-    }
-
-    .careers_Content content {
-        width: 100%;
-    }
-
     .careers_Content .content h3 {
-        text-align: center;
         font-size: 2.2rem;
         font-weight: 400;
     }
 
     .careers_Content p {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         line-height: 1.6;
         width: 100%;
     }
 
     /* BLOG SECTION DESIGN */
     .blog {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
+        width: calc(100% - 4.9%);
         padding: 1rem 5% 1rem;
         margin-bottom: 8rem;
     }
@@ -732,17 +1034,12 @@ section {
     }
 
     .blog_Box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin-top: .6rem;
         gap: 2.5rem;
     }
 
     .blog_Content {
         width: 100%;
-        text-align: center;
     }
     
     .blog_Content img {
@@ -751,7 +1048,6 @@ section {
     }
 
     .blog_Content .content {
-        text-align: start; 
         width: 90%;
         margin-top: 2rem;
         padding: 1rem;
@@ -762,39 +1058,25 @@ section {
     }
 
     .blog_Content .content a {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
     }
     .blog_Content .content p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         line-height: 1.5;
         margin-top: 1rem;
     }
 
     /* CONTACT SECTION DESIGN */
     .contact {
-        height: 48.5rem;
+        height: 54rem;
     }
     .contact .contact_Box{
-        display: flex;
-        flex-direction: column;
-        margin-top: 1rem;
+        margin-top: 5rem;
         padding: 1.6rem 10% .8rem;
     }
-
-    .contact .contact_Box .contact_Column {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        
-    }
-    .contact_Content_Socials .contact_Logo {
-        justify-content: center;
-    }
+    
     .contact_Content_Socials .contact_Net {
-        justify-content: center;
-        gap: 1.2rem;
+        gap: 1.5rem;
     }
 
     .contact_Net .icon_Socials {
@@ -802,58 +1084,18 @@ section {
         height:2.5rem;
     }
 
-    .contact_Column .contact_Link {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        font-size: medium;
+    .contact_Column .contact_Content{
+        margin-top: -1.5rem;
     }
-
-    .contact_Box .contact_Content_Button .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .contact_Column .contact_Content .contact_Link a {
+        font-size: 1.5rem;
     }
-
-    .contact_Content_Button .contact_button .btn {
-        color: var(red);
-        font-size: medium;
-        font-weight: 500;
-        width: 16.5rem;
-        height: 4.8rem;
-        margin-top: 1rem;
-    } 
 
     .contact_Content_Button p {
         font-size: 1.4rem;
         margin-top: 1rem;
     }
 
-    .footer {
-        display: flex;
-        flex-direction: column;
-        font-size: small;
-        gap: 2rem;
-    }
-    .footer .attribution {
-        text-align: center;
-    }
-
-    .footer .footer_BtnToTop {
-        justify-content: center;
-        align-items: center;
-    }
-    
-
-    
-    
-
-
-
-    
-
-  
 }
 
 
