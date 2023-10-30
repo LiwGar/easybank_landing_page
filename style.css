@@ -519,7 +519,7 @@ section {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: calc(100% - 2.55%);
+        width: calc(100% - 1%);
         height: 7rem;
         padding: 1rem 5% 1rem;
     }
@@ -590,7 +590,7 @@ section {
     .mobile_Background {
         display: block;
         position: absolute;
-        width: calc(100%);
+        width: calc(100% - .7%);
         top:   1vh;
         left: .0.5rem;
         z-index: -1;
@@ -603,9 +603,9 @@ section {
     .desktop_Background_Two {
         display: block;
         position: absolute;
-        width: calc(100%);
+        width: calc(100% - 2.55%);
         top: -7.6rem;
-        left: 1.1rem;
+        left: .4rem;
         z-index: -1;
     }
     
@@ -615,7 +615,7 @@ section {
     
     /* HOME SECTION DESIGN */
     .home {
-        width: calc(100%);
+        width: calc(100% - 1%);
         margin-top: 23rem;
         min-height: 55rem;
         padding: 1rem 5% 1rem;
@@ -661,7 +661,7 @@ section {
     .about {
         justify-content: center;        
         text-align: center;
-        width: calc(100%);
+        width: calc(100% - 1%);
         min-height: 28rem;
         padding: 1rem 5% 1rem;
     }
@@ -684,7 +684,7 @@ section {
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: calc(100%);
+        width: calc(100% - 1%);
         padding: 1rem 5% 5rem;
     }
 
@@ -725,7 +725,7 @@ section {
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: calc(100%);
+        width: calc(100% - 1%);
         padding: 1.5rem 5% 1rem;
         margin-bottom: 8rem;
     }
@@ -778,7 +778,7 @@ section {
 
     /* CONTACT SECTION DESIGN */
     .contact {
-        width: calc(100%);
+        width: calc(100% - .7%);
         height: 58rem;
     }
     .contact .contact_Box{
@@ -841,7 +841,7 @@ section {
         display: flex;
         flex-direction: column;
         font-size: small;
-        width: calc(100%);
+        width: calc(100% - 1%);
         gap: 2rem;
     }
     .footer .attribution {
