@@ -16,8 +16,6 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
   - [Continued development](#continued-development)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -33,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [](https://liwgar.github.io/easybank_landing_page/)
+- Live Site URL: [easybank_landing_page](https://liwgar.github.io/easybank_landing_page/)
 
 ## My process
 
@@ -80,3 +78,10 @@ The objective is:
 - Website - [LiwGAr](https://liwgar-portfolio.vercel.app/)
 - Frontend Mentor - [@Liwgar](https://www.frontendmentor.io/profile/LiwGar)
 
+
+
+I've just completed a front-end coding challenge from @frontendmentor! 🎉
+
+You can see my solution here: https://www.frontendmentor.io/solutions/responsive-landing-page-using-html5-css-and-javascript-ZXSh6BJfqa
+
+Any suggestions on how I can improve are welcome!
